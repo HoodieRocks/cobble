@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* rethink-sans-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Rethink Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/rethink-sans-v3-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* rethink-sans-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Rethink Sans';
+  font-style: normal;
+  font-weight: 500;
+  src: url('./fonts/rethink-sans-v3-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* rethink-sans-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Rethink Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url('./fonts/rethink-sans-v3-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+:root {
+	scroll-behavior: smooth;
+}
+
+.bg-dots {
+	background-repeat: repeat;
+	background-size: 24px 24px;
+	background-image: radial-gradient(
+		4px circle at 50% 50%,
+		theme(colors.stone.700) 50%,
+		transparent 51%
+	);
+}
+
+.grid-auto-fit {
+	grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+.animate-fade {
+  animation-name: fade;
+  animation-duration: 200ms;
+  animation-delay: var(--delay);
+  animation-fill-mode: forwards;
+}
