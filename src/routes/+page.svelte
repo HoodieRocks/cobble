@@ -5,7 +5,10 @@
 </section>
 
 <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 p-8 gap-4" id="about">
-	<div class="bg-stone-800 p-4 rounded-lg text-white animate-fade opacity-0" style="--delay: 100ms;">
+	<div
+		class="bg-stone-800 p-4 rounded-lg text-white animate-fade opacity-0"
+		style="--delay: 100ms;"
+	>
 		<h2 class="text-2xl font-bold pb-2 border-b border-stone-600">Programmer</h2>
 		<ul class="list-disc p-4 text-xl">
 			<li>Kotlin</li>
@@ -15,7 +18,10 @@
 		</ul>
 		<p>...and probably a couple others</p>
 	</div>
-	<div class="bg-stone-800 p-4 rounded-lg text-white animate-fade opacity-0" style="--delay: 200ms;">
+	<div
+		class="bg-stone-800 p-4 rounded-lg text-white animate-fade opacity-0"
+		style="--delay: 200ms;"
+	>
 		<h2 class="text-2xl font-bold pb-2 border-b border-stone-600">Gamer</h2>
 		<ul class="list-disc p-4 text-xl">
 			<li>Minecraft</li>
@@ -25,7 +31,10 @@
 		</ul>
 		<p>...and probably a couple others</p>
 	</div>
-	<div class="bg-stone-800 p-4 rounded-lg text-white animate-fade opacity-0" style="--delay: 300ms;">
+	<div
+		class="bg-stone-800 p-4 rounded-lg text-white animate-fade opacity-0"
+		style="--delay: 300ms;"
+	>
 		<h2 class="text-2xl font-bold pb-2 border-b border-stone-600">Hobbyist</h2>
 		<ul class="list-disc p-4 text-xl">
 			<li>Robotics</li>
@@ -35,7 +44,10 @@
 		</ul>
 		<p>...and probably a couple others</p>
 	</div>
-	<div class="bg-stone-800 p-4 rounded-lg text-white animate-fade opacity-0" style="--delay: 400ms;">
+	<div
+		class="bg-stone-800 p-4 rounded-lg text-white animate-fade opacity-0"
+		style="--delay: 400ms;"
+	>
 		<h2 class="text-2xl font-bold pb-2 border-b border-stone-600">Knowledge Enthusiast</h2>
 		<p class="py-4">I want to learn:</p>
 		<ul class="list-disc px-4 text-xl">

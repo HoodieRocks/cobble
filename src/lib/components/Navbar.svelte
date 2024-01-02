@@ -24,13 +24,13 @@
 		const children = [...nameInstance.children];
 
 		interval = setInterval(() => {
-			children.forEach(e => {
+			children.forEach((e) => {
 				e.textContent = randomLetter();
 			});
 		}, 10);
 	}
 
-  // TODO text animation
+	// TODO text animation
 	function nameBlurHandler() {
 		const children = [...nameInstance.children];
 		const logoText = 'COBBLE';
@@ -56,7 +56,7 @@
 			class="text-2xl font-bold font-mono"
 			on:focus={nameHoverHandler}
 			on:mouseenter={nameHoverHandler}
-      on:click={nameBlurHandler}
+			on:click={nameBlurHandler}
 			on:blur={nameBlurHandler}
 			on:mouseleave={nameBlurHandler}>COBBLE</a
 		>
