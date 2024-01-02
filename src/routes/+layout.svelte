@@ -4,7 +4,8 @@
 </script>
 
 <svelte:head>
-	<title>COBBLE | Home</title>
+	<title>COBBLE</title>
+  <meta name="description" content="I bet you've never seen a rock program! Fortunately for you, I exist. 🪨">
 </svelte:head>
 
 <Navbar />
