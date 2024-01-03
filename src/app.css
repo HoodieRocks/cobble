@@ -61,3 +61,21 @@
 	animation-delay: var(--delay);
 	animation-fill-mode: forwards;
 }
+
+.animate-eight {
+	animation-name: eight;
+	animation-duration: 20s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes eight {
+  0% {
+    opacity: 0;
+    transform: scale(4);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(10);
+  }
+}
