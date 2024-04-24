@@ -1,10 +1,18 @@
 <script>
+	import { beforeNavigate } from "$app/navigation";
 	import EightBall from "$lib/components/EightBall.svelte";
 	import { onMount } from "svelte";
 
+  /** @type {HTMLAudioElement} */
+  let audio
+
   onMount(() => {
-    const audio = new Audio("dramatic.mp3")
+    audio = new Audio("dramatic.mp3")
     audio.play()
+  })
+
+  beforeNavigate(() => {
+    audio.pause()
   })
 </script>
 

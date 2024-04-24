@@ -1,46 +1,3 @@
-<script>
-	import { randomLetter } from '$lib/utils/letters';
-	import { onMount } from 'svelte';
-
-	/** @type {HTMLAnchorElement}*/
-	let nameInstance;
-	let interval = 0;
-
-	onMount(() => {
-		// Get the text content from the paragraph
-		const paragraph = nameInstance.textContent;
-
-		// Split the text into an array of letters
-		const letters = paragraph?.split('');
-
-		// Create separate tags for each letter
-		const letterTags = letters?.map((letter, i) => `<span id="logo-l-${i}">${letter}</span>`);
-
-		// Join the tags together and set as HTML content in a new container
-		nameInstance.innerHTML = letterTags?.join('') || 'This will never happen';
-	});
-
-	function nameHoverHandler() {
-		const children = [...nameInstance.children];
-
-		interval = setInterval(() => {
-			children.forEach((e) => {
-				e.textContent = randomLetter();
-			});
-		}, 10);
-	}
-
-	// TODO text animation
-	function nameBlurHandler() {
-		const children = [...nameInstance.children];
-		const logoText = 'COBBLE';
-		children.forEach((e, i) => {
-			e.textContent = logoText.charAt(i);
-		});
-		clearInterval(interval);
-	}
-</script>
-
 <header>
 	<a
 		href="#main-content"
@@ -52,13 +9,7 @@
 		<a
 			id="nav_logo"
 			href="/"
-			bind:this={nameInstance}
-			class="text-2xl font-bold font-mono"
-			on:focus={nameHoverHandler}
-			on:mouseenter={nameHoverHandler}
-			on:click={nameBlurHandler}
-			on:blur={nameBlurHandler}
-			on:mouseleave={nameBlurHandler}>COBBLE</a
+			class="text-2xl font-bold font-mono">COBBLE</a
 		>
 		<a href="/#about">About</a>
 		<a href="/#things">Things</a>
