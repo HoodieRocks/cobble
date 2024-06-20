@@ -9,7 +9,7 @@
 		<a
 			id="nav_logo"
 			href="/"
-			class="text-2xl font-bold font-mono">COBBLE</a
+			class="text-2xl font-bold font-mono">COBBLESTONE</a
 		>
 		<a href="/#about">About</a>
 		<a href="/#things">Things</a>

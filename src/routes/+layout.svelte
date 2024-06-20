@@ -18,6 +18,6 @@
 </svelte:head>
 
 <Navbar />
-<main class="bg-stone-900 min-h-screen min-w-full" id="main-content">
+<main class="bg-stone-800 min-h-screen min-w-full" id="main-content">
 	<slot />
 </main>
